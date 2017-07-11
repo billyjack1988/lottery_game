@@ -24,7 +24,7 @@ class Lottery_test < Minitest::Test
 	def test_to_see_if_one_number_matches
 		my_number = "1234"
 		bash_number = ["1239", "2323", "7773"] 
-		assert_equal([], close_num(my_number, bash_number))
+		assert_equal(true, close_num(my_number, bash_number))
 	end
 end
 

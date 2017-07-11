@@ -22,8 +22,8 @@ def close_num(my_number, bash_number)
 	if my_number[3] == bash_number[3]
 		counter += 1
 	end 
-	if my_number =~ bash_number
-		puts "true"
+	if counter == 3
+		true
 	end
 end
 
