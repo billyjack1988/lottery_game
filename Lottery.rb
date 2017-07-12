@@ -39,5 +39,5 @@ def winning_array(my_number, bash_number)
 		a << onnumoff
 		end
 	end
-a
+ p a
 end
