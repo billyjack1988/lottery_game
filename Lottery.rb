@@ -31,3 +31,13 @@ def close_num(my_number, bash_number)
 	end
 end
 
+def winning_array(my_number, bash_number)
+	a = []
+	bash_number.each do |onnumoff|
+
+	if close_num(my_number, onnumoff) == true 
+		a << onnumoff
+		end
+	end
+a
+end
