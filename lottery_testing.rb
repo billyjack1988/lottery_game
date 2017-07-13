@@ -36,6 +36,13 @@ class Lottery_test < Minitest::Test
 		my_number = "1234"
 		bash_number = ["1239", "2353", "3521", "1323", "1233","6666"]
 		assert_equal(["1239", "1233"], winning_array(my_number, bash_number))
-		end
+	end
+	
+	def test_for_larger_number
+		my_number = "123456789"
+		bash_number = ["123456783", "123456789", "123456788"]
+		assert_equal(["123456783", "123456788"], bigger_array(my_number, bash_number))
+	end
 end
+
 
