@@ -77,12 +77,14 @@ def bigger_num(my_number, bash_number)
 		true
 	end
 end
-def close_num(my_number, bash_number)
+
+
+def five_numbers_are_right(my_number, bash_number)
 	counter = 0
 	if my_number[0] == bash_number[0]
-		counter += 1
+		counter += 1 
 	else 0
-	end
+	end 
 	if my_number[1] == bash_number[1]
 		counter += 1
 	else 0
@@ -94,45 +96,21 @@ def close_num(my_number, bash_number)
 	if my_number[3] == bash_number[3]
 		counter += 1
 	else 0
-	end 
-	if counter == 3
-		true
+	end
+	if my_number[4] == bash_number[4]
+		counter += 1
+	else 0
+	end
+	if my_number[5] == bash_number[5]
+		counter += 1
+	else 0
+	end
+	if counter == 5 
+		true 
 	end
 end
 
-def name_of_winner(my_winner, bash_winners)
-	counter = 0
-	if my_winner[0] == bash_winners[0]
-		counter += 1
-	else 0
-	end
-	if my_winner[1] == bash_winners[1]
-		counter += 1
-	else 0
-	end
-	if my_winner[2] == bash_winners[2]
-		counter += 1
-	else 0
-	end
-	if my_winner[3] == bash_winners[3]
-		counter += 1
-	else 0
-	end
-	if my_winner[4] == bash_winners[4]
-		counter += 1
-	else 0
-	end
-	if my_winner[5] == bash_winners[5]
-		counter += 1
-	else 0
-	end	
-		if counter == 5
-			true
-		end
-end
-
-
-
+		
 
 def winning_array(my_number, bash_number)
 	a = []
@@ -146,23 +124,25 @@ def winning_array(my_number, bash_number)
 end
 
 def bigger_array(my_number, bash_number)
-	b = []
+	bash = []
 		bash_number.each do |bignum|
 			
 		if bigger_num(my_number, bignum) == true
-				b << bignum
+				bash << bignum
 		end
 	end 
-	p b 
+	p bash
 end
 
-def name_of_winner(my_winner, bash_winners)
-	c= []
-		bash_winners.each do |winnersname|
-			if name_of_winner(my_winner, bash_winners) == true
-				c << winnersname
-			end
+def five_numbers_array(my_number, bash_number)
+	c = []
+		bash_number.each do |five|
+			
+		if five_numbers_are_right(my_number, five) == true
+				c << five
 		end
-		p c
-end 
+	end 
+	p c 
+end
+
 	

@@ -50,11 +50,11 @@ class Lottery_test < Minitest::Test
 		assert_equal(["123456788", "123456787"], bigger_array(my_number, bash_number))
 	end 
 
-	def test_for_winners_names 
-		my_winner = "billy"
-		bash_winners = ["jeff", "bailey", "gritts", "stoney", "pony", "billy"]
-		assert_equal([], name_of_winner(my_winner, bash_winners))
+	
+	def test_for_five
+		my_number = "123456789"
+		bash_number = ["123457891", "888888888", "5678", "37737"]
+		assert_equal(["123457891"], five_numbers_array(my_number, bash_number))
 	end
 end
-
 
